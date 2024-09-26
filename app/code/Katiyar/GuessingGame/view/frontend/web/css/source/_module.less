@@ -1,0 +1,40 @@
+& when (@media-common = true) {
+    .desktop-only {
+        display: none;
+    }
+    .guessing-game_modal {
+        .modal-inner-wrap {
+            max-width: 550px;
+        }
+
+        #guessing-modal {
+            &.modal {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+    
+                .modal-content {
+                    padding: 20px;
+                    border-radius: 5px;
+                    position: relative;
+                }
+            }
+            #guess-button,
+            #reset-button {
+                margin: 10px 15px 10px 0;
+                background: transparent;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+	.desktop-only {
+		display: block;
+	}
+}

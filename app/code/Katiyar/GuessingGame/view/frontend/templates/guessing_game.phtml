@@ -1,0 +1,21 @@
+<footer id="second-footer" class="second-footer">
+    <button id="open-modal" class="desktop-only"><?= __('Play Guessing Game')?></button>
+</footer>
+
+<!-- Modal -->
+<div id="guessing-modal" class="guessing-modal">
+    <p><?= __('Guess a number between 1 and 50:')?></p>
+    <input type="number" id="guess-input" min="1" max="50"/>
+    <button id="guess-button"><?= __('Guess')?></button>
+    <button id="reset-button">Reset</button>
+    <p id="feedback-message" class="message"></p>
+    <p id="history-message"></p>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {                
+            "GuessingGame": {}
+        }
+    }
+</script>
